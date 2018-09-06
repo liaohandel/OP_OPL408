@@ -1,0 +1,1286 @@
+{
+	"AUTOSN": "OPF408x2_20180804x1",
+	"DEVLIST": {	
+		"GROWLED": {
+			"MODE":1, 
+			"STATU":0,
+			"SENSOR_CONTROL":0,
+			"TIMER": {
+				"EPOS": [
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0A"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0B"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0C"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0D"}
+				],
+				"PWM": { "01": 0, "02": 0, "03": 0,  "04": 0 },
+				"ST": "0145",
+				"ON": "0001",
+				"OFF": "0001"
+			}
+		},
+		"CYCLEFAN": {
+			"MODE":1, 
+			"STATU":0,
+			"SENSOR_CONTROL":0,
+			"TIMER": {
+				"EPOS": [
+					{"POS":"E002","CMD":"PUMP","STU":"5B0000","GROUP":"00"}
+				],
+				"PWM": { "01": 0, "02": 0, "03": 0,  "04": 0 },
+				"ST": "0145",
+				"ON": "0001",
+				"OFF": "0001"
+			}
+		},
+		"SPRAY": {
+			"MODE":1, 
+			"STATU":0,
+			"SENSOR_CONTROL":0,
+			"TIMER": {
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"420000","GROUP":"00"}],
+				"PWM": { "01": 0, "02": 0, "03": 0,  "04": 0 },
+				"ST": "0145",
+				"ON": "0001",
+				"OFF": "0001"
+			}
+		},
+		"REFRESH": {
+			"MODE":1, 
+			"STATU":0,
+			"SENSOR_CONTROL":0,
+			"TIMER": {
+				"EPOS": [
+					{"POS":"E002","CMD":"PUMP","STU":"530000","GROUP":"00"},
+					{"POS":"E002","CMD":"PUMP","STU":"580000","GROUP":"00"}
+				],
+				"PWM": { "01": 0, "02": 0, "03": 0,  "04": 0 },
+				"ST": "0145",
+				"ON": "0001",
+				"OFF": "0001"
+			}
+		},
+		"UV": {
+			"MODE":1, 
+			"STATU":0,
+			"SENSOR_CONTROL":0,
+			"TIMER": {
+				"EPOS": [{"POS":"G001","CMD":"PUMP","STU":"410000","GROUP":"10"}],
+				"PWM": { "01": 0, "02": 0, "03": 0,  "04": 0 },
+				"ST": "0145",
+				"ON": "0001",
+				"OFF": "0001"
+			}
+		},
+		"PUMP": {
+			"MODE":1,
+			"STATU":0,
+			"SENSOR_CONTROL":0, 
+			"TIMER": {
+				"EPOS": [
+					{"POS":"E002","CMD":"PUMP","STU":"9C00640320","GROUP":"00"}
+				],
+				"PWM": { "01": 0, "02": 0, "03": 0,  "04": 0 },
+				"ST": "0145",
+				"ON": "0001",
+				"OFF": "0001"
+			}
+		},
+		"GROWUPDOWN": {
+			"MODE":0, 
+			"STATU":0,
+			"SENSOR_CONTROL":0,
+			"TIMER": {
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"400000","GROUP":"00"}],
+				"PWM": { "01": 0, "02": 0, "03": 0,  "04": 0 },
+				"ST": "0145",
+				"ON": "0001",
+				"OFF": "0001"
+			}
+		},
+		"AIRCON": {
+			"MODE":3,
+			"STATU":0,
+			"SENSOR_CONTROL":0, 
+			"RUNLOOP":{
+				"EPOS": [
+				{"POS":"E002","CMD":"PUMP","STU":"680000","GROUP":"00"}
+				],
+				"SENSORPOS": [
+					{"POS":"H001","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"},
+					{"POS":"H002","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"},
+					{"POS":"H003","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"},
+					{"POS":"H004","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"},
+					{"POS":"H005","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"},
+					{"POS":"H006","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"}
+				],
+				"OUTSENSORPOS": [{"POS":"E002","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"}],
+				"TEMPERATURE!LOOP": "02000280"
+			}
+		},
+		"AIRRH": {
+			"MODE":3,
+			"STATU":0, 
+			"SENSOR_CONTROL":0,
+			"RUNLOOP":{
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"680000","GROUP":"00"}],
+				"SENSORPOS": [
+					{"POS":"H001","CMD":"RH","STU":"920000","GROUP":"00"},
+					{"POS":"H002","CMD":"RH","STU":"920000","GROUP":"00"},
+					{"POS":"H003","CMD":"RH","STU":"920000","GROUP":"00"},
+					{"POS":"H004","CMD":"RH","STU":"920000","GROUP":"00"},
+					{"POS":"H005","CMD":"RH","STU":"920000","GROUP":"00"},
+					{"POS":"H006","CMD":"RH","STU":"920000","GROUP":"00"}
+				],
+				"OUTSENSORPOS": [{"POS":"E002","CMD":"RH","STU":"920000","GROUP":"00"}],
+				"RH!LOOP": "05000750"
+			}
+		},
+		"WATERTM": {
+			"MODE":0, 
+			"STATU":0, 
+			"SENSOR_CONTROL":0,
+			"RUNLOOP":{
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"660000","GROUP":"00"}],
+				"SENSORPOS": [{"POS":"H001","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"}],
+				"OUTSENSORPOS": [{"POS":"E002","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"}],
+				"TEMPERATURE!LOOP": "05000750"
+			}
+		},
+		"CO2": {
+			"MODE":3, 
+			"STATU":0,
+			"SENSOR_CONTROL":0,
+			"RUNLOOP":{
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"590000","GROUP":"00"}],
+				"SENSORPOS": [
+					{"POS":"H001","CMD":"CO2","STU":"910000","GROUP":"00"},
+					{"POS":"H002","CMD":"CO2","STU":"910000","GROUP":"00"},
+					{"POS":"H003","CMD":"CO2","STU":"910000","GROUP":"00"},
+					{"POS":"H004","CMD":"CO2","STU":"910000","GROUP":"00"},
+					{"POS":"H005","CMD":"CO2","STU":"910000","GROUP":"00"},
+					{"POS":"H006","CMD":"CO2","STU":"910000","GROUP":"00"}
+				],
+				"OUTSENSORPOS": [{"POS":"E002","CMD":"CO2","STU":"910000","GROUP":"00"}],
+				"CO2!LOOP": "03000800"
+			}
+		},
+		"OPWAVE": {			
+			"MODE":2,
+			"STATU":1, 
+			"SENSOR_CONTROL":2,
+			"SCHEDULE": {
+				"EPOS": [{"POS":"G010","CMD":"LED","STU":"200000","GROUP":"00"}],
+				"PWM": {"01": 0,"02": 0,"03": 0,"04": 0},
+				"WEEK": "01111111",
+				"ONLOOP": [
+				  "00102359"
+				]
+			}
+		},
+		"DOSE": {
+			"MODE":3,
+			"STATU":0,
+			"SENSOR_CONTROL":2,
+			"RUNLOOP": {
+				"EPOS": [
+					{"POS":"E002","CMD":"PUMP","STU":"490000","GROUP":"00"},
+					{"POS":"E002","CMD":"PUMP","STU":"43000A","GROUP":"00"}
+				],
+				"SENSORPOS": [{"POS":"E002","CMD":"PH","STU":"930000","GROUP":"00"}],
+				"OUTSENSORPOS": [{"POS":"E002","CMD":"ELECTRONS","STU":"940000","GROUP":"00"}],
+				"DOSE!LOOP": "00000000"
+			}
+		},
+		"LEDHI": {
+			"MODE":2,
+			"STATU":0, 
+			"SENSOR_CONTROL":2,
+			"SCHEDULE": {
+				"EPOS": [
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0A"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0B"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0C"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0D"}
+				],
+				"PWM": {"01": 0,"02": 0,"03": 0,"04": 0},
+				"WEEK": "01111111",
+				"ONLOOP": [
+				  "00000900",
+				  "15002359"
+				]
+			}
+		},
+		"LEDLOW": {
+			"MODE":2,
+			"STATU":0, 
+			"SENSOR_CONTROL":2,
+			"SCHEDULE": {
+				"EPOS": [
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0A"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0B"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0C"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0D"}
+				],
+				"PWM": {"01": 0,"02": 0,"03": 0,"04": 0},
+				"WEEK": "01111111",
+				"ONLOOP": [
+				  "00000500",
+				  "19002359"
+				]
+			}
+		},
+		"LISTREFFAN": {
+			"MODE":4,
+			"STATU":0, 
+			"SENSOR_CONTROL":2,
+			"LISTLOOP": {
+				"EPOS": [
+					{"POS":"E002","CMD":"PUMP","STU":"00","GROUP":"00","CHKACTION":{"ON":[0],"OFF":[1]}}
+				],
+				"SENSORPOS": [
+					{"POS":"E002","CMD":"PUMP","STU":"00","GROUP":"00","LOOP":"03000800"}
+				],
+				"OUTSENSORPOS": [
+					{"POS":"A001","CMD":"RH","STU":"00","GROUP":"00","LOOP":"03000800"}
+				],
+				"LISTREFFAN!LOOP": "000000000000",
+				"MODETRIG":{"low":0,"high":10},
+				"CHKMODE":0,
+				"CHKCOUNT":0
+				
+			}
+		},
+		"ECDOSE": {
+			"MODE":3,
+			"STATU":0,
+			"SENSOR_CONTROL":0, 
+			"RUNLOOP":{
+				"EPOS": [
+					{"POS":"E002","CMD":"PUMP","STU":"44000A","GROUP":"00"},
+					{"POS":"E002","CMD":"PUMP","STU":"45000A","GROUP":"00"},
+					{"POS":"E002","CMD":"PUMP","STU":"46000A","GROUP":"00"}
+				],
+				"SENSORPOS": [{"POS":"E002","CMD":"ELECTRONS","STU":"940000","GROUP":"00"}],
+				"OUTSENSORPOS": [{"POS":"E002","CMD":"ELECTRONS","STU":"940000","GROUP":"00"}],
+				"ELECTRONS!LOOP": "02000280"
+			}
+		},
+		"PHDOSE": {
+			"MODE":3,
+			"STATU":0,
+			"SENSOR_CONTROL":0, 
+			"RUNLOOP":{
+				"EPOS": [
+					{"POS":"E002","CMD":"PUMP","STU":"61000A","GROUP":"00"}
+				],
+				"SENSORPOS": [{"POS":"E002","CMD":"PH","STU":"930000","GROUP":"00"}],
+				"OUTSENSORPOS": [{"POS":"E002","CMD":"PH","STU":"930000","GROUP":"00"}],
+				"PH!LOOP": "02000280"
+			}
+		},
+		"DOSEA": {
+			"MODE":2,
+			"STATU":0, 
+			"SENSOR_CONTROL":2,
+			"SCHEDULE": {
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"44000A","GROUP":"00"}],
+				"PWM": {"01": 0,"02": 0,"03": 0,"04": 0	},
+				"WEEK": "01111111",
+				"ONLOOP": [
+				  "00000900",
+				  "15002359"
+				]
+			}
+		},
+		"DOSEB": {
+			"MODE":2,
+			"STATU":0, 
+			"SENSOR_CONTROL":2,
+			"SCHEDULE": {
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"45000A","GROUP":"00"}],
+				"PWM": {"01": 0,"02": 0,"0111111113": 0,"04": 0	},
+				"WEEK": "01111111",
+				"ONLOOP": [
+				  "00000900",
+				  "15002359"
+				]
+			}
+		},
+		"DOSEC": {
+			"MODE":2,
+			"STATU":0, 
+			"SENSOR_CONTROL":2,
+			"SCHEDULE": {
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"46000A","GROUP":"00"}],
+				"PWM": {"01": 0,"02": 0,"03": 0,"04": 0	},
+				"WEEK": "01111111",
+				"ONLOOP": [
+				  "00000900",
+				  "15002359"
+				]
+			}
+		},
+		"DOSED": {
+			"MODE":2,
+			"STATU":0, 
+			"SENSOR_CONTROL":2,
+			"SCHEDULE": {
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"61000A","GROUP":"00"}],
+				"PWM": {"01": 0,"02": 0,"03": 0,"04": 0	},
+				"WEEK": "01111111",
+				"ONLOOP": [
+				  "00000900",
+				  "15002359"
+				]
+			}
+		}
+
+	},
+	
+	"ALARMCHECK":{
+		"am1001":{
+			"STATU":0,"AMCODE":"1001",
+			"EPOS": [{"POS":"0000","CMD":"RH","STU":"00","GROUP":"00","ACTION":{"LINK":0}}],
+			"SENSORPOS": [
+			  {"POS": "H001","CMD": "RH","STU": "A10000","GROUP": "00"},
+			  {"POS": "H004","CMD": "RH","STU": "A10000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":0,"high":10},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1002":{
+			"STATU":0,"AMCODE":"1002",
+			"EPOS": [{"POS":"0000","CMD":"RH","STU":"00","GROUP":"00","ACTION":{"LINK":0}}],
+			"SENSORPOS": [
+			  {"POS": "H001","CMD": "RH","STU": "A10000","GROUP": "00"},
+			  {"POS": "H004","CMD": "RH","STU": "A10000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":0,"high":10},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1003":{
+			"STATU":1,"AMCODE":"1003",
+			"EPOS": [{"POS":"0000","CMD":"CO2","STU":"910000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "H001","CMD": "CO2","STU": "910000","GROUP": "00"},
+			  {"POS": "H004","CMD": "CO2","STU": "910000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":1500,"high":2000},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1004":{
+			"STATU":1,"AMCODE":"1004",
+			"EPOS": [{"POS":"0000","CMD":"CO2","STU":"910000","GROUP":"00","ACTION":{"LINK":3}}],
+			"SENSORPOS": [
+			  {"POS": "H001","CMD": "CO2","STU": "910000","GROUP": "00"},
+			  {"POS": "H004","CMD": "CO2","STU": "910000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":1500,"high":2000},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1005":{
+			"STATU":1,"AMCODE":"1005",
+			"EPOS": [{"POS":"0000","CMD":"CO2","STU":"910000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "H001","CMD": "CO2","STU": "910000","GROUP": "00"},
+			  {"POS": "H004","CMD": "CO2","STU": "910000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":360,"high":400},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1006":{
+			"STATU":1,"AMCODE":"1006",
+			"EPOS": [{"POS":"0000","CMD":"CO2","STU":"910000","GROUP":"00","ACTION":{"LINK":1}}],
+			"SENSORPOS": [
+			  {"POS": "H001","CMD": "CO2","STU": "910000","GROUP": "00"},
+			  {"POS": "H004","CMD": "CO2","STU": "910000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":0,"high":360},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		
+		"am1007":{
+			"STATU":1,"AMCODE":"1007",
+			"EPOS": [{"POS":"0000","CMD":"RH","STU":"00","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "H001","CMD": "RH","STU": "920000","GROUP": "00"},
+			  {"POS": "H004","CMD": "RH","STU": "920000","GROUP": "00"},
+			  {"POS": "H005","CMD": "RH","STU": "920000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":800,"high":850},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1008":{
+			"STATU":1,"AMCODE":"1008",
+			"EPOS": [{"POS":"0000","CMD":"RH","STU":"00","GROUP":"00","ACTION":{"LINK":2 }}],
+			"SENSORPOS": [
+			  {"POS": "H001","CMD": "RH","STU": "920000","GROUP": "00"},
+			  {"POS": "H004","CMD": "RH","STU": "920000","GROUP": "00"},
+			  {"POS": "H005","CMD": "RH","STU": "920000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":850,"high":1000},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1009":{
+			"STATU":1,"AMCODE":"1009",
+			"EPOS": [{"POS":"0000","CMD":"RH","STU":"00","GROUP":"920000","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "H001","CMD":"RH","STU": "920000","GROUP": "00"},
+			  {"POS": "H004","CMD":"RH","STU": "920000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":500,"high":600},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1010":{
+			"STATU":1,"AMCODE":"1010",
+			"EPOS": [{"POS":"0000","CMD":"RH","STU":"920000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "H001","CMD": "RH","STU": "920000","GROUP": "00"},
+			  {"POS": "H004","CMD": "RH","STU": "920000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":100,"high":500},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		
+		"am1011":{
+			"STATU":1,"AMCODE":"1011",
+			"EPOS": [{"POS":"0000","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "H001","CMD": "TEMPERATURE","STU": "A10000","GROUP": "00"},
+			  {"POS": "H004","CMD": "TEMPERATURE","STU": "A10000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":280,"high":320},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1012":{
+			"STATU":1,"AMCODE":"1012",
+			"EPOS": [{"POS":"0000","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00","ACTION":{"LINK":3}}],
+			"SENSORPOS": [
+			  {"POS": "H001","CMD": "TEMPERATURE","STU": "A10000","GROUP": "00"},
+			  {"POS": "H004","CMD": "TEMPERATURE","STU": "A10000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":280,"high":330},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1013":{
+			"STATU":1,"AMCODE":"1013",
+			"EPOS": [{"POS":"0000","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "H001","CMD": "TEMPERATURE","STU": "A10000","GROUP": "00"},
+			  {"POS": "H004","CMD": "TEMPERATURE","STU": "A10000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":150,"high":210},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1014":{
+			"STATU":1,"AMCODE":"1014",
+			"EPOS": [{"POS":"0000","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "H001","CMD": "TEMPERATURE","STU": "A10000","GROUP": "00"},
+			  {"POS": "H004","CMD": "TEMPERATURE","STU": "A10000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":0,"high":150},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		
+		"am1015":{
+			"STATU":1,"AMCODE":"1015",
+			"EPOS": [{"POS":"0000","CMD":"PH","STU":"930000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+				{"POS":"E002","CMD":"PH","STU":"930000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":650,"high":700},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1016":{
+			"STATU":1,"AMCODE":"1016",
+			"EPOS": [{"POS":"0000","CMD":"PH","STU":"930000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+				{"POS":"E002","CMD":"PH","STU":"930000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":700,"high":1000},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1017":{
+			"STATU":1,"AMCODE":"1017",
+			"EPOS": [{"POS":"0000","CMD":"PH","STU":"930000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+				{"POS":"E002","CMD":"PH","STU":"930000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":530,"high":550},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1018":{
+			"STATU":1,"AMCODE":"1018",
+			"EPOS": [{"POS":"0000","CMD":"PH","STU":"00","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+				{"POS":"E002","CMD":"PH","STU":"930000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":100,"high":530},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1019":{
+			"STATU":1,"AMCODE":"1019",
+			"EPOS": [{"POS":"0000","CMD":"ELECTRONS","STU":"940000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+				{"POS":"E002","CMD":"ELECTRONS","STU":"940000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":210,"high":220},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1020":{
+			"STATU":1,"AMCODE":"1020",
+			"EPOS": [{"POS":"0000","CMD":"ELECTRONS","STU":"940000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+				{"POS":"E002","CMD":"ELECTRONS","STU":"940000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":220,"high":500},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1021":{
+			"STATU":1,"AMCODE":"1021",
+			"EPOS": [{"POS":"0000","CMD":"ELECTRONS","STU":"940000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+				{"POS":"E002","CMD":"ELECTRONS","STU":"940000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":100,"high":120},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am1022":{
+			"STATU":1,"AMCODE":"1022",
+			"EPOS": [{"POS":"0000","CMD":"ELECTRONS","STU":"940000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+				{"POS":"E002","CMD":"ELECTRONS","STU":"940000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":0,"high":100},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		
+		"am2001":{
+			"STATU":1,"AMCODE":"2001",
+			"EPOS": [{"POS":"0000","CMD":"WATERLEVEL","STU":"770000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "E002","CMD": "WATERLEVEL","STU": "770000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":4,"high":12},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am2002":{
+			"STATU":1,"AMCODE":"2002",
+			"EPOS": [{"POS":"0000","CMD":"WATERLEVEL","STU":"770000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "E002","CMD": "WATERLEVEL","STU": "770000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":0,"high":8},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am2003":{
+			"STATU":1,"AMCODE":"2003",
+			"EPOS": [{"POS":"0000","CMD":"WATERLEVEL","STU":"760000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "E002","CMD": "WATERLEVEL","STU": "760000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":4,"high":12},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am2004":{
+			"STATU":1,"AMCODE":"2004",
+			"EPOS": [{"POS":"0000","CMD":"WATERLEVEL","STU":"760000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "E002","CMD": "WATERLEVEL","STU": "760000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":0,"high":4 },
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am2005":{
+			"STATU":1,"AMCODE":"2005",
+			"EPOS": [{"POS":"0000","CMD":"WATERLEVEL","STU":"710000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "E002","CMD": "WATERLEVEL","STU": "710000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":4,"high":8},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am2006":{
+			"STATU":1,"AMCODE":"2006",
+			"EPOS": [{"POS":"0000","CMD":"WATERLEVEL","STU":"710000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "E002","CMD": "WATERLEVEL","STU": "710000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":0,"high":4},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am2007":{
+			"STATU":1,"AMCODE":"2007",
+			"EPOS": [{"POS":"0000","CMD":"WATERLEVEL","STU":"720000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "E002","CMD": "WATERLEVEL","STU": "720000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":4,"high":8},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am2008":{
+			"STATU":1,"AMCODE":"2008",
+			"EPOS": [{"POS":"0000","CMD":"WATERLEVEL","STU":"720000","GROUP":"00","ACTION":{"LINK":0}}],
+			"SENSORPOS": [
+			  {"POS": "E002","CMD": "WATERLEVEL","STU": "720000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":0,"high":4},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am2009":{
+			"STATU":1,"AMCODE":"2009",
+			"EPOS": [{"POS":"0000","CMD":"WATERLEVEL","STU":"730000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "E002","CMD": "WATERLEVEL","STU": "730000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":4,"high":8},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am2010":{
+			"STATU":1,"AMCODE":"2010",
+			"EPOS": [{"POS":"0000","CMD":"WATERLEVEL","STU":"730000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "E002","CMD": "WATERLEVEL","STU": "730000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":0,"high":4},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am2011":{
+			"STATU":1,"AMCODE":"2011",
+			"EPOS": [{"POS":"0000","CMD":"WATERLEVEL","STU":"740000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "E002","CMD": "WATERLEVEL","STU": "740000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":4,"high":8},
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		},
+		"am2012":{
+			"STATU":1,"AMCODE":"2012",
+			"EPOS": [{"POS":"0000","CMD":"WATERLEVEL","STU":"740000","GROUP":"00","ACTION":{"LINK":2}}],
+			"SENSORPOS": [
+			  {"POS": "E002","CMD": "WATERLEVEL","STU": "740000","GROUP": "00"}
+			],
+			"MODETRIG":{"low":0,"high":4 },
+			"CHKMODE":0,
+			"CHKCOUNT":0
+		}
+		
+	},
+	
+	"DEVICESET":{
+		"GROWLED":{"ONLEV":["20004A","20004A","20004A","20004A"]},
+		"REFFAN":{"ONLEV":["ON","OFF","OFF","OFF"]},
+		"SETTIMEPAM":{"EXTIP":"192.168.5.104","LOCALCITY":"America/New_York"},
+		"DEVALARMBUFFER":[],
+		"SYSAUTOHOLD":{"GROWLED":11,"REFRESH":11,"CYCLEFAN":11,"AIRCON":11,"LEDHI":11,"LEDLOW":11}
+	},
+	
+	"SENSORCHECK":{
+		
+	},
+	
+	"DEFAUTOLIST":{
+	
+		"GROWLED": {
+			"MODE":1, 
+			"STATU":0,
+			"SENSOR_CONTROL":0,
+			"TIMER": {
+				"EPOS": [
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0A"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0B"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0C"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0D"}
+				],
+				"PWM": { "01": 0, "02": 0, "03": 0,  "04": 0 },
+				"ST": "0145",
+				"ON": "0001",
+				"OFF": "0001"
+			}
+		},
+		"CYCLEFAN": {
+			"MODE":1, 
+			"STATU":0,
+			"SENSOR_CONTROL":0,
+			"TIMER": {
+				"EPOS": [
+					{"POS":"E002","CMD":"PUMP","STU":"5B0000","GROUP":"00"}
+				],
+				"PWM": { "01": 0, "02": 0, "03": 0,  "04": 0 },
+				"ST": "0145",
+				"ON": "0001",
+				"OFF": "0001"
+			}
+		},
+		"SPRAY": {
+			"MODE":1, 
+			"STATU":0,
+			"SENSOR_CONTROL":0,
+			"TIMER": {
+				"EPOS": [
+					{"POS":"E002","CMD":"PUMP","STU":"420014","GROUP":"00"}
+				],
+				"PWM": { "01": 0, "02": 0, "03": 0,  "04": 0 },
+				"ST": "0145",
+				"ON": "0001",
+				"OFF": "0001"
+			}
+		},
+		"REFRESH": {
+			"MODE":1, 
+			"STATU":0,
+			"SENSOR_CONTROL":0,
+			"TIMER": {
+				"EPOS": [
+					{"POS":"E002","CMD":"PUMP","STU":"530000","GROUP":"00"},
+					{"POS":"E002","CMD":"PUMP","STU":"580000","GROUP":"00"}
+				],
+				"PWM": { "01": 0, "02": 0, "03": 0,  "04": 0 },
+				"ST": "0145",
+				"ON": "0001",
+				"OFF": "0001"
+			}
+		},
+		"UV": {
+			"MODE":1, 
+			"STATU":0,
+			"SENSOR_CONTROL":0,
+			"TIMER": {
+				"EPOS": [{"POS":"G001","CMD":"PUMP","STU":"410000","GROUP":"10"}],
+				"PWM": { "01": 0, "02": 0, "03": 0,  "04": 0 },
+				"ST": "0145",
+				"ON": "0001",
+				"OFF": "0001"
+			}
+		},
+		"PUMP": {
+			"MODE":1,
+			"STATU":0,
+			"SENSOR_CONTROL":0, 
+			"TIMER": {
+				"EPOS": [
+					{"POS":"E002","CMD":"PUMP","STU":"9C00640320","GROUP":"00"}
+				],
+				"PWM": { "01": 0, "02": 0, "03": 0,  "04": 0 },
+				"ST": "0145",
+				"ON": "0001",
+				"OFF": "0001"
+			}
+		},
+		"GROWUPDOWN": {
+			"MODE":0, 
+			"STATU":0,
+			"SENSOR_CONTROL":0,
+			"TIMER": {
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"400000","GROUP":"00"}],
+				"PWM": { "01": 0, "02": 0, "03": 0,  "04": 0 },
+				"ST": "0145",
+				"ON": "0001",
+				"OFF": "0001"
+			}
+		},
+		"AIRCON": {
+			"MODE":3,
+			"STATU":0,
+			"SENSOR_CONTROL":0, 
+			"RUNLOOP":{
+				"EPOS": [
+				{"POS":"E002","CMD":"PUMP","STU":"680000","GROUP":"00"}
+				],
+				"SENSORPOS": [
+					{"POS":"H001","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"},
+					{"POS":"H001","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"},
+					{"POS":"H001","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"},
+					{"POS":"H004","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"},
+					{"POS":"H005","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"},
+					{"POS":"H001","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"}
+				],
+				"OUTSENSORPOS": [{"POS":"E002","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"}],
+				"TEMPERATURE!LOOP": "02000280"
+			}
+		},
+		"AIRRH": {
+			"MODE":3,
+			"STATU":0, 
+			"SENSOR_CONTROL":0,
+			"RUNLOOP":{
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"680000","GROUP":"00"}],
+				"SENSORPOS": [
+					{"POS":"H001","CMD":"RH","STU":"920000","GROUP":"00"},
+					{"POS":"H001","CMD":"RH","STU":"920000","GROUP":"00"},
+					{"POS":"H001","CMD":"RH","STU":"920000","GROUP":"00"},
+					{"POS":"H004","CMD":"RH","STU":"920000","GROUP":"00"},
+					{"POS":"H005","CMD":"RH","STU":"920000","GROUP":"00"},
+					{"POS":"H001","CMD":"RH","STU":"920000","GROUP":"00"}
+				],
+				"OUTSENSORPOS": [{"POS":"E002","CMD":"RH","STU":"920000","GROUP":"00"}],
+				"RH!LOOP": "05000750"
+			}
+		},
+		"WATERTM": {
+			"MODE":0, 
+			"STATU":0, 
+			"SENSOR_CONTROL":0,
+			"RUNLOOP":{
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"660000","GROUP":"00"}],
+				"SENSORPOS": [{"POS":"H001","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"}],
+				"OUTSENSORPOS": [{"POS":"E002","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00"}],
+				"TEMPERATURE!LOOP": "05000750"
+			}
+		},
+		"CO2": {
+			"MODE":3, 
+			"STATU":0,
+			"SENSOR_CONTROL":0,
+			"RUNLOOP":{
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"590000","GROUP":"00"}],
+				"SENSORPOS": [
+					{"POS":"H001","CMD":"CO2","STU":"910000","GROUP":"00"},
+					{"POS":"H001","CMD":"CO2","STU":"910000","GROUP":"00"},
+					{"POS":"H001","CMD":"CO2","STU":"910000","GROUP":"00"},
+					{"POS":"H004","CMD":"CO2","STU":"910000","GROUP":"00"},
+					{"POS":"H001","CMD":"CO2","STU":"910000","GROUP":"00"},
+					{"POS":"H001","CMD":"CO2","STU":"910000","GROUP":"00"}
+				],
+				"OUTSENSORPOS": [{"POS":"E002","CMD":"CO2","STU":"910000","GROUP":"00"}],
+				"CO2!LOOP": "03000800"
+			}
+		},
+		"OPWAVE": {
+			"MODE":1,
+			"STATU":0, 
+			"SENSOR_CONTROL":0,
+			"TIMER": {
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"5F0000","GROUP":"00"}],
+				"PWM": { "01": 0, "02": 0, "03": 0,  "04": 0 },
+				"ST": "0145",
+				"ON": "0001",
+				"OFF": "0001"
+			}
+		},
+		"DOSE": {
+			"MODE":3,
+			"STATU":0,
+			"SENSOR_CONTROL":2,
+			"RUNLOOP": {
+				"EPOS": [
+					{"POS":"E002","CMD":"PUMP","STU":"490000","GROUP":"00"},
+					{"POS":"E002","CMD":"PUMP","STU":"43000A","GROUP":"00"}
+				],
+				"SENSORPOS": [{"POS":"E002","CMD":"PH","STU":"930000","GROUP":"00"}],
+				"OUTSENSORPOS": [{"POS":"E002","CMD":"ELECTRONS","STU":"940000","GROUP":"00"}],
+				"DOSE!LOOP": "00000000"
+			}
+		},
+		"LEDHI": {
+			"MODE":2,
+			"STATU":0, 
+			"SENSOR_CONTROL":2,
+			"SCHEDULE": {
+				"EPOS": [
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0A"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0B"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0C"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0D"}
+				],
+				"PWM": {"01": 0,"02": 0,"03": 0,"04": 0},
+				"WEEK": "01111111",
+				"ONLOOP": [
+				  "00000900",
+				  "15002359"
+				]
+			}
+		},
+		"LEDLOW": {
+			"MODE":2,
+			"STATU":0, 
+			"SENSOR_CONTROL":2,
+			"SCHEDULE": {
+				"EPOS": [
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0A"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0B"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0C"},
+					{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"0D"}
+				],
+				"PWM": {"01": 0,"02": 0,"03": 0,"04": 0},
+				"WEEK": "01111111",
+				"ONLOOP": [
+				  "00000500",
+				  "19002359"
+				]
+			}
+		},
+		"LISTREFFAN": {
+			"MODE":0,
+			"STATU":0, 
+			"SENSOR_CONTROL":2,
+			"LISTLOOP": {
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"00","GROUP":"00"}],
+				"SENSORPOS": [
+					{"POS":"E002","CMD":"PUMP","STU":"00","GROUP":"00","LOOP":"03000800"}
+				],
+				"OUTSENSORPOS": [
+					{"POS":"A001","CMD":"RH","STU":"00","GROUP":"00","LOOP":"03000800"}
+				],
+				"LISTREFFAN!LOOP": "000000000000"
+			}
+		},
+		"ECDOSE": {
+			"MODE":3,
+			"STATU":0,
+			"SENSOR_CONTROL":0, 
+			"RUNLOOP":{
+				"EPOS": [
+					{"POS":"E002","CMD":"PUMP","STU":"44000A","GROUP":"00"},
+					{"POS":"E002","CMD":"PUMP","STU":"45000A","GROUP":"00"},
+					{"POS":"E002","CMD":"PUMP","STU":"46000A","GROUP":"00"}
+				],
+				"SENSORPOS": [{"POS":"E002","CMD":"ELECTRONS","STU":"940000","GROUP":"00"}],
+				"OUTSENSORPOS": [{"POS":"E002","CMD":"ELECTRONS","STU":"940000","GROUP":"00"}],
+				"ELECTRONS!LOOP": "02000280"
+			}
+		},
+		"PHDOSE": {
+			"MODE":3,
+			"STATU":0,
+			"SENSOR_CONTROL":0, 
+			"RUNLOOP":{
+				"EPOS": [
+					{"POS":"E002","CMD":"PUMP","STU":"61000A","GROUP":"00"}
+				],
+				"SENSORPOS": [{"POS":"E002","CMD":"PH","STU":"930000","GROUP":"00"}],
+				"OUTSENSORPOS": [{"POS":"E002","CMD":"PH","STU":"930000","GROUP":"00"}],
+				"PH!LOOP": "02000280"
+			}
+		},
+		"DOSEA": {
+			"MODE":2,
+			"STATU":0, 
+			"SENSOR_CONTROL":2,
+			"SCHEDULE": {
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"44000A","GROUP":"00"}],
+				"PWM": {"01": 0,"02": 0,"03": 0,"04": 0	},
+				"WEEK": "01111111",
+				"ONLOOP": [
+				  "00000005",
+				  "00300035",
+				  "01000105",
+				  "01300135",
+				  "02000205",
+				  "02300235",
+				  "03000305",
+				  "03300335",
+				  "04000405",
+				  "04300435",
+				  "05000505",
+				  "05300535"
+				]
+			}
+		},
+		"DOSEB": {
+			"MODE":2,
+			"STATU":0, 
+			"SENSOR_CONTROL":2,
+			"SCHEDULE": {
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"45000A","GROUP":"00"}],
+				"PWM": {"01": 0,"02": 0,"03": 0,"04": 0	},
+				"WEEK": "01111111",
+				"ONLOOP": [
+				  "06000605",
+				  "06300635",
+				  "07000705",
+				  "07300735",
+				  "08000805",
+				  "08300835",
+				  "09000905",
+				  "09300935",
+				  "10001005",
+				  "10301035",
+				  "11001105",
+				  "11301135"
+				]
+			}
+		},
+		"DOSEC": {
+			"MODE":2,
+			"STATU":0, 
+			"SENSOR_CONTROL":2,
+			"SCHEDULE": {
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"46000A","GROUP":"00"}],
+				"PWM": {"01": 0,"02": 0,"03": 0,"04": 0	},
+				"WEEK": "01111111",
+				"ONLOOP": [
+				  "12001205",
+				  "12301235",
+				  "13001305",
+				  "13301335",
+				  "14001405",
+				  "14301435",
+				  "15001505",
+				  "15301535",
+				  "16001605",
+				  "16301635",
+				  "17001705",
+				  "17301735"
+				]
+			}
+		},
+		"DOSED": {
+			"MODE":2,
+			"STATU":0, 
+			"SENSOR_CONTROL":2,
+			"SCHEDULE": {
+				"EPOS": [{"POS":"E002","CMD":"PUMP","STU":"61000A","GROUP":"00"}],
+				"PWM": {"01": 0,"02": 0,"03": 0,"04": 0	},
+				"WEEK": "01111111",
+				"ONLOOP": [
+				  "18001805",
+				  "18301835",
+				  "19001905",
+				  "19301935",
+				  "20002005",
+				  "20302035",
+				  "21002105",
+				  "21302135",
+				  "22002205",
+				  "22302235",
+				  "23002305",
+				  "23302335"
+				]
+			}
+		}
+
+
+	},
+	
+	"LIMITPAM":{
+		"TEMPERATURE":{"limlow":150,"limhigh":300},
+		"RH":{"limlow":450,"limhigh":750},
+		"CO2":{"limlow":450,"limhigh":800},
+		"WATERLEVEL":{"limlow":20,"limhigh":90},
+		"WATERLEVEL_01":{"limlow":20,"limhigh":90},
+		"WATERLEVEL_02":{"limlow":20,"limhigh":90},
+		"ELECTRONS":{"limlow":10,"limhigh":90},
+		"PH":{"limlow":5,"limhigh":9}		
+	},
+	
+	"WATERLOOP":{
+		"BOX2LOOP":{
+			"MODE":5, 
+			"STATU":1,
+			"SENSOR_CONTROL":0,
+			"CHKLOOP": {
+				"DEVPOS":{
+					"M1":{"POS":"E002","CMD":"PUMP","STU":"480000","GROUP":"00"},
+					"M2":{"POS":"E002","CMD":"PUMP","STU":"410000","GROUP":"00"},
+					"M3":{"POS":"E002","CMD":"PUMP","STU":"490000","GROUP":"00"},
+					"M4":{"POS":"E002","CMD":"PUMP","STU":"430000","GROUP":"00"},
+					"M5":{"POS":"E002","CMD":"PUMP","STU":"4C0000","GROUP":"00"}					
+				},
+				"SENSORPOS":{
+					"WATERLEVEL6":{"POS":"E002","CMD":"WATERLEVEL","STU":"760000","GROUP":"00","Value":0,"count":0},
+					"WATERLEVEL7":{"POS":"E002","CMD":"WATERLEVEL","STU":"770000","GROUP":"00","Value":0,"count":0},
+					"ECDATA":{"POS":"E002","CMD":"ELECTRONS","STU":"940000","GROUP":"00","Value":0,"count":0},
+					"PHDATA":{"POS":"E002","CMD":"PH","STU":"930000","GROUP":"00","Value":0,"count":0}
+				},
+				"CHKVALUE":{
+					"WAIT1":0,
+					"DELAY1":0,
+					"DELAY2":0
+				}
+			}
+		},
+		"ECDOSELOOP":{
+			"MODE":5, 
+			"STATU":0,
+			"SENSOR_CONTROL":0,
+			"CHKLOOP": {
+				"DEVPOS":{
+					"M1":{"POS":"E002","CMD":"PUMP","STU":"480000","GROUP":"00"},
+					"M2":{"POS":"E002","CMD":"PUMP","STU":"410000","GROUP":"00"},
+					"M3":{"POS":"E002","CMD":"PUMP","STU":"490000","GROUP":"00"},
+					"M4":{"POS":"E002","CMD":"PUMP","STU":"430000","GROUP":"00"},
+					"M5":{"POS":"E002","CMD":"PUMP","STU":"4C0000","GROUP":"00"},
+					"MDOSEA":{"POS":"E002","CMD":"PUMP","STU":"440000","GROUP":"00"},
+					"MDOSEB":{"POS":"E002","CMD":"PUMP","STU":"450000","GROUP":"00"},
+					"MDOSEC":{"POS":"E002","CMD":"PUMP","STU":"460000","GROUP":"00"},
+					"MDOSED":{"POS":"E002","CMD":"PUMP","STU":"610000","GROUP":"00"}					
+				},
+				"SENSORPOS":{
+					"WATERLEVEL1":{"POS":"E002","CMD":"WATERLEVEL","STU":"710000","GROUP":"00","Value":0,"count":0},
+					"WATERLEVEL2":{"POS":"E002","CMD":"WATERLEVEL","STU":"720000","GROUP":"00","Value":0,"count":0},
+					"WATERLEVEL3":{"POS":"E002","CMD":"WATERLEVEL","STU":"730000","GROUP":"00","Value":0,"count":0},
+					"WATERLEVEL4":{"POS":"E002","CMD":"WATERLEVEL","STU":"740000","GROUP":"00","Value":0,"count":0},
+					"WATERLEVEL5":{"POS":"E002","CMD":"WATERLEVEL","STU":"750000","GROUP":"00","Value":0,"count":0},
+					"WATERLEVEL6":{"POS":"E002","CMD":"WATERLEVEL","STU":"760000","GROUP":"00","Value":0,"count":0},
+					"WATERLEVEL7":{"POS":"E002","CMD":"WATERLEVEL","STU":"770000","GROUP":"00","Value":0,"count":0},
+					"ECDATA":{"POS":"E002","CMD":"ELECTRONS","STU":"940000","GROUP":"00","Value":0,"count":0},
+					"PHDATA":{"POS":"E002","CMD":"PH","STU":"930000","GROUP":"00","Value":0,"count":0}
+				},
+				"CHKVALUE":{
+					"WAIT1":0,
+					"DELAY1":0
+				},
+				"chktime":[
+					{"stt":"0001","endt":"0005"},
+					{"stt":"0601","endt":"0605"},
+					{"stt":"1201","endt":"1205"},
+					{"stt":"1801","endt":"1805"}
+				]
+			}
+		},
+		"PHDOSELOOP":{
+			"MODE":5, 
+			"STATU":0,
+			"SENSOR_CONTROL":0,
+			"CHKLOOP": {
+				"DEVPOS":{
+					"M1":{},
+					"M2":{},
+					"M3":{},
+					"M4":{},
+					"MDOSEA":{},
+					"MDOSEB":{},
+					"MDOSEC":{},
+					"MDOSED":{}					
+				},
+				"SENSORPOS":{
+					"WATERLEVEL1":{},
+					"WATERLEVEL2":{},
+					"WATERLEVEL3":{},
+					"WATERLEVEL4":{},
+					"WATERLEVEL5":{},
+					"WATERLEVEL6":{},
+					"WATERLEVEL7":{},
+					"WATEREC":{},
+					"WATERPH":{}
+				},
+				"CHKVALUE":{
+					"WAIT1":0,
+					"DELAY1":0
+				}
+			}
+		},
+		"autotmloop":{
+			"MODE":5, 
+			"STATU":1,
+			"SENSOR_CONTROL":0,
+			"CHKLOOP": {
+				"DEVPOS":{
+					"AIRM1":{"POS":"E002","CMD":"PUMP","STU":"680000","GROUP":"00"},
+					"TECM2":{"POS":"E002","CMD":"PUMP","STU":"620000","GROUP":"00"},
+					"REFx1x10minM3":{"POS":"E002","CMD":"PUMP","STU":"580BB8","GROUP":"00"},
+					"REFx1M3":{"POS":"E002","CMD":"PUMP","STU":"580000","GROUP":"00"},
+					"REFx2M3":{"POS":"E002","CMD":"PUMP","STU":"570000","GROUP":"00"},
+					"REFx3M3":{"POS":"E002","CMD":"PUMP","STU":"560000","GROUP":"00"},
+					"REFx4M3":{"POS":"E002","CMD":"PUMP","STU":"550000","GROUP":"00"},
+					"REFx5M3":{"POS":"E002","CMD":"PUMP","STU":"530000","GROUP":"00"},
+					"REFx4MJAUTOOFF":{"POS":"REFRESH","CMD":"REGCMD/AUTOSETUP","STU":"00","GROUP":"00"},
+					"REFx4MJAUTOON":{"POS":"REFRESH","CMD":"REGCMD/AUTOSETUP","STU":"01","GROUP":"00"},
+					"REFx6M4AUTO":{"POS":"KEYPAD0","CMD":"REGCMD/KEYSETUP","STU":"AUTO","GROUP":"K005"},
+					"REFx6M4ON":{"POS":"KEYPAD0","CMD":"REGCMD/KEYSETUP","STU":"ON","GROUP":"K005"},
+					"REFx6M4OFF":{"POS":"KEYPAD0","CMD":"REGCMD/KEYSETUP","STU":"OFF","GROUP":"K005"},	
+					"INFANM6":{"POS":"E002","CMD":"PUMP","STU":"530000","GROUP":"00"},
+					"LEDM5OFF":{"POS":"KEYPAD0","CMD":"REGCMD/KEYSETUP","STU":"OFF100","GROUP":"K023"},
+					"LEDM5ON":{"POS":"KEYPAD0","CMD":"REGCMD/KEYSETUP","STU":"ON","GROUP":"K003"},
+					"LEDM5ON1":{"POS":"KEYPAD0","CMD":"REGCMD/KEYSETUP","STU":"ON25","GROUP":"K021"},
+					"LEDM5ON50":{"POS":"KEYPAD0","CMD":"REGCMD/KEYSETUP","STU":"ON50","GROUP":"K021"},
+					"LEDM5ON75":{"POS":"KEYPAD0","CMD":"REGCMD/KEYSETUP","STU":"ON75","GROUP":"K021"},
+					"LEDM5ON100":{"POS":"KEYPAD0","CMD":"REGCMD/KEYSETUP","STU":"ON100","GROUP":"K021"},
+					"LEDM5AUTO":{"POS":"KEYPAD0","CMD":"REGCMD/KEYSETUP","STU":"AUTO","GROUP":"K003"}		
+				},
+				"SENSORPOS":{
+					"LEDSTU":{"POS":"A001","CMD":"LED","STU":"200000","GROUP":"00","LEDSTU":0,"count":0},
+					"INDOORTM1":{"POS":"H001","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00","Value":0,"count":0},
+					"INDOORTM2":{"POS":"H002","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00","Value":0,"count":0},
+					"INDOORTM3":{"POS":"H003","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00","Value":0,"count":0},
+					"INDOORTM4":{"POS":"H004","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00","Value":0,"count":0},
+					"INDOORTM5":{"POS":"H005","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00","Value":0,"count":0},
+					"INDOORTM6":{"POS":"H006","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00","Value":0,"count":0},
+					"OUTDOORTM":{"POS":"E002","CMD":"TEMPERATURE","STU":"A10000","GROUP":"00","Value":0,"count":0}
+				},
+				"CHKVALUE":{
+					"WAIT1":0,
+					"DELAY1":0,
+					"INMODE":0,
+					"OUTMODE":0,
+					"WKINMODE":0,
+					"WKOUTMODE":0,
+					"INTM_LOW":280,
+					"INTM_HI":350,
+					"INTM_LEVLIST":[150,200,280,350],
+					"INTM_LEVLISTUP":[170,220,300,360],
+					"INTM_LEVLISTDOWN":[130,180,260,330],
+					"OUTTM_LOW":280,
+					"OUTTM_HI":350,
+					"OUTTM_LEVLIST":[150,200,280,350],
+					"INSTCODE1":1,
+					"INSTCODE2":1,
+					"INSTCODEALL":"11",
+					"INSTDATALIST":[],
+					"INTMDIRFLAG":1,
+					"OUTSTCODE1":1,
+					"OUTSTCODE2":1,
+					"OUTSTCODEALL":"11",
+					"OUTSTDATALIST":[],
+					"OUTTMDIRFLAG":1,
+					"LEDAUTOEN":1,
+					"LEDDRVSTU":1,
+					"RUNMODE":"0000"
+				}
+			}
+		}		
+	},
+
+	"PWMOFFBACKUP":{
+		"AUTOLIST":[],
+		"WATERLOOPLIST":[],
+		"KEYPADLIST":{"KEYPAD0":{},"KEYPAD1":{},"KEYPAD2":{}}
+	},
+	
+	"SENSORAUTO":{
+	},
+	
+	"EVENTID":{
+		"0001":[],
+		"0002":[]
+	}	
+	
+	
+	
+}
+

@@ -1,0 +1,1208 @@
+{
+  "KEYVER": "OPF408x2_180729",
+  "KEYPADCOUNT": 2,
+  "KEYLIB": {  
+    "KEYPAD0": {
+      "STATUS": {
+        "evncount": 11,
+        "ver": "webui4",
+        "korglist": ["K001","K002","K003","K004","K005","K006","K007","K008","K009","K010","K011"]
+      },
+      "K001": {
+        "STATUS": {
+          "stcnt": 1,
+          "stpt": 0,
+          "stmask": ["OFF","ON"]
+        },
+        "EVENT": {
+          "ON":  [{"CMD":"PWM","POS":"E001","Action":"ON","STU":"000000","GROUP":"FF" }],
+          "OFF": [
+			{"CMD":"PWM","POS":"E001","Action":"OFF","STU":"000000","GROUP":"FF"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K002"}
+		  ]
+        }
+      },
+      "K002": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"]
+        },
+        "EVENT": {
+          "ON":  [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"AUTO","GROUP":"K003"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"AUTO","GROUP":"K012"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"AUTO","GROUP":"K004"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K008"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K009"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K005"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K007"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K006"}
+			],
+          "OFF": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K003"},
+			{"CMD":"REGCMD/AUTOSETUP","POS":"autotmloop","Action":"AUTO","STU":"02","GROUP":"00" },
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K004"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K008"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K009"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K006"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K007"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K005"}
+		  ]
+        }
+      },
+      "K003": {
+        "STATUS": {
+          "stcnt": 5,
+          "stpt": 0,
+          "stmask": ["AUTO","ON","HI","LOW","OFF"]
+        },
+        "EVENT": {
+          "AUTO": [
+				{"CMD":"REGCMD/AUTOSETUP","POS":"GROWLED","Action":"AUTO","STU":"01","GROUP":"00" },
+				{"CMD":"REGCMD/AUTOSETUP","POS":"LEDHI","Action":"AUTO","STU":"00","GROUP":"00" },
+				{"CMD":"REGCMD/AUTOSETUP","POS":"LEDLOW","Action":"AUTO","STU":"00","GROUP":"00" },
+				{"CMD":"LED","POS":"A001","Action":"ON","STU":"200000","GROUP":"0A" },
+				{"CMD":"LED","POS":"A001","Action":"ON","STU":"200000","GROUP":"0B" },
+				{"CMD":"LED","POS":"A001","Action":"ON","STU":"200000","GROUP":"0C" },
+				{"CMD":"LED","POS":"A001","Action":"ON","STU":"200000","GROUP":"0D" }
+			],
+          "ON": [
+				{"CMD":"REGCMD/AUTOSETUP","POS":"GROWLED","Action":"AUTO","STU":"00","GROUP":"00" },
+				{"CMD":"REGCMD/AUTOSETUP","POS":"LEDHI","Action":"AUTO","STU":"00","GROUP":"00" },
+				{"CMD":"REGCMD/AUTOSETUP","POS":"LEDLOW","Action":"AUTO","STU":"00","GROUP":"00" },
+				{"CMD":"LED","POS":"A001","Action":"ON","STU":"200000","GROUP":"0A" },
+				{"CMD":"LED","POS":"A001","Action":"ON","STU":"200000","GROUP":"0B" },
+				{"CMD":"LED","POS":"A001","Action":"ON","STU":"200000","GROUP":"0C" },
+				{"CMD":"LED","POS":"A001","Action":"ON","STU":"200000","GROUP":"0D" }
+			],
+          "HI": [
+				{"CMD":"REGCMD/AUTOSETUP","POS":"GROWLED","Action":"AUTO","STU":"00","GROUP":"00" },
+				{"CMD":"REGCMD/AUTOSETUP","POS":"LEDHI","Action":"AUTO","STU":"01","GROUP":"00" },
+				{"CMD":"REGCMD/AUTOSETUP","POS":"LEDLOW","Action":"AUTO","STU":"00","GROUP":"00" },
+				{"CMD":"LED","POS":"A001","Action":"ON","STU":"200000","GROUP":"0A" },
+				{"CMD":"LED","POS":"A001","Action":"ON","STU":"200000","GROUP":"0B" },
+				{"CMD":"LED","POS":"A001","Action":"ON","STU":"200000","GROUP":"0C" },
+				{"CMD":"LED","POS":"A001","Action":"ON","STU":"200000","GROUP":"0D" }
+			],
+          "LOW": [
+				{"CMD":"REGCMD/AUTOSETUP","POS":"GROWLED","Action":"AUTO","STU":"00","GROUP":"00" },
+				{"CMD":"REGCMD/AUTOSETUP","POS":"LEDHI","Action":"AUTO","STU":"00","GROUP":"00" },
+				{"CMD":"REGCMD/AUTOSETUP","POS":"LEDLOW","Action":"AUTO","STU":"01","GROUP":"00" },
+				{"CMD":"LED","POS":"A001","Action":"ON","STU":"200000","GROUP":"0A" },
+				{"CMD":"LED","POS":"A001","Action":"ON","STU":"200000","GROUP":"0B" },
+				{"CMD":"LED","POS":"A001","Action":"ON","STU":"200000","GROUP":"0C" },
+				{"CMD":"LED","POS":"A001","Action":"ON","STU":"200000","GROUP":"0D" }
+			],
+          "OFF": [
+				{"CMD":"REGCMD/AUTOSETUP","POS":"GROWLED","Action":"AUTO","STU":"00","GROUP":"00" },
+				{"CMD":"REGCMD/AUTOSETUP","POS":"LEDHI","Action":"AUTO","STU":"00","GROUP":"00" },
+				{"CMD":"REGCMD/AUTOSETUP","POS":"LEDLOW","Action":"AUTO","STU":"00","GROUP":"00" },
+				{"CMD":"LED","POS":"A001","Action":"OFF","STU":"200000","GROUP":"0A" },
+				{"CMD":"LED","POS":"A001","Action":"OFF","STU":"200000","GROUP":"0B" },
+				{"CMD":"LED","POS":"A001","Action":"OFF","STU":"200000","GROUP":"0C" },
+				{"CMD":"LED","POS":"A001","Action":"OFF","STU":"200000","GROUP":"0D" }
+			]
+        }
+      },
+      "K004": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["AUTO","ON","OFF"
+          ]
+        },
+        "EVENT": {
+          "AUTO": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"CYCLEFAN","Action":"AUTO","STU":"01","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"5B0000","GROUP":"00" }],
+          "ON": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"CYCLEFAN","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"5B0000","GROUP":"00" }],
+          "OFF": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"CYCLEFAN","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"5B0000","GROUP":"00" }]
+        }
+      },	  
+      "K005": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["AUTO","ON","OFF"
+          ]
+        },
+        "EVENT": {
+          "AUTO": [			
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"530000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"580000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"680000","GROUP":"00" },
+			{"CMD":"REGCMD/AUTOSETUP","POS":"REFRESH","Action":"AUTO","STU":"01","GROUP":"00" }
+			],
+          "ON": [
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"530000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"580000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"680000","GROUP":"00" },
+			{"CMD":"REGCMD/AUTOSETUP","POS":"REFRESH","Action":"AUTO","STU":"00","GROUP":"00" }
+			],
+          "OFF": [			
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"580000","GROUP":"00" },
+			{"CMD":"REGCMD/AUTOSETUP","POS":"REFRESH","Action":"AUTO","STU":"00","GROUP":"00" }
+			]
+        }
+      },	  
+      "K006": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["AUTO","ON","OFF"]
+        },
+        "EVENT": {
+          "AUTO": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"UV","Action":"AUTO","STU":"01","GROUP":"10" },
+			{"CMD":"PUMP","POS":"G001","Action":"OFF","STU":"410000","GROUP":"10" }
+			],
+          "ON": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"UV","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"G001","Action":"ON","STU":"410000","GROUP":"10" }],
+          "OFF": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"UV","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"G001","Action":"OFF","STU":"4100000","GROUP":"10" }]
+        }
+      },	  
+      "K007": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["AUTO","ON","OFF"]
+        },
+        "EVENT": {
+          "AUTO": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"PUMP","Action":"AUTO","STU":"01","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"9C012C0384","GROUP":"00" }
+			],
+          "ON": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"PUMP","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"9C012C0384","GROUP":"00" }
+			],
+          "OFF": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"PUMP","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"9C00000000","GROUP":"00" }
+			]
+        }
+      },	  
+      "K008": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"]
+        },
+        "EVENT": {
+          "ON": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"BOX2LOOP","Action":"AUTO","STU":"03","GROUP":"00" }
+			],
+          "OFF": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"BOX2LOOP","Action":"AUTO","STU":"02","GROUP":"00" }
+			]
+        }
+      },	  
+      "K009": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["ON","OFF"
+          ]
+        },
+        "EVENT": {
+          "ON":  [
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"5A0000","GROUP":"00" }
+			],
+          "OFF": [
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"5A0000","GROUP":"00" }
+			]
+        }
+      },	  
+      "K010": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["ON","OFF"
+          ]
+        },
+        "EVENT": {
+          "ON":  [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"0000","Action":"SET","STU":"00","GROUP":"00" }
+			],
+          "OFF": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"0000","Action":"SET","STU":"00","GROUP":"00" }
+			]
+        }
+      },	  
+      "K011": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["ON","OFF"]
+        },
+        "EVENT": {
+          "ON":  [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"LOW","GROUP":"K003"}
+			],
+          "OFF": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"AUTO","GROUP":"K003"}
+			]
+        }
+      },
+	  
+	  "K012": {
+        "STATUS": {
+          "stcnt": 3,
+          "stpt": 0,
+          "stmask": ["AUTO","ON","OFF"]
+        },
+        "EVENT": {
+          "AUTO": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"autotmloop","Action":"AUTO","STU":"03","GROUP":"00" },
+			{"CMD":"REGCMD/AUTOSETUP","POS":"AIRRH","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"REGCMD/AUTOSETUP","POS":"AIRCON","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"680000","GROUP":"00" },
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K004"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K005"}
+			],
+          "ON": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"autotmloop","Action":"AUTO","STU":"02","GROUP":"00" },
+			{"CMD":"REGCMD/AUTOSETUP","POS":"AIRRH","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"REGCMD/AUTOSETUP","POS":"AIRCON","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K004"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K005"},
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"680000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"530000","GROUP":"00" }
+			],
+          "OFF": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"autotmloop","Action":"AUTO","STU":"02","GROUP":"00" },
+			{"CMD":"REGCMD/AUTOSETUP","POS":"AIRRH","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"REGCMD/AUTOSETUP","POS":"AIRCON","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"680000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"530000","GROUP":"00" },
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K004"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K005"}
+			]
+        }
+      },
+	  "K013": {
+        "STATUS": {
+          "stcnt": 3,
+          "stpt": 0,
+          "stmask": ["AUTO","ON","OFF"]
+        },
+        "EVENT": {
+          "AUTO": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"AIRRH","Action":"AUTO","STU":"01","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"680000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"530000","GROUP":"00" },
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K004"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K005"}
+			],
+          "ON": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"AIRRH","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"680000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"530000","GROUP":"00" },
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K004"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K005"}
+			],
+          "OFF": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"AIRRH","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"680000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"530000","GROUP":"00" },
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K004"},
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K005"}
+			]
+        }
+      },
+	  "K014": {
+        "STATUS": {
+          "stcnt": 3,
+          "stpt": 0,
+          "stmask": ["AUTO","ON","OFF"]
+        },
+        "EVENT": {
+          "AUTO": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"ECDOSE","Action":"AUTO","STU":"01","GROUP":"00" }
+			],
+          "ON": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"ECDOSE","Action":"AUTO","STU":"00","GROUP":"00" }
+		  ],
+          "OFF": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"ECDOSE","Action":"AUTO","STU":"00","GROUP":"00" }
+		  ]
+        }
+      },
+	  "K015": {
+        "STATUS": {
+          "stcnt": 3,
+          "stpt": 0,
+          "stmask": ["AUTO","ON","OFF"]
+        },
+        "EVENT": {
+          "AUTO": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"CO2","Action":"AUTO","STU":"01","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"590000","GROUP":"00" }],
+          "ON": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"CO2","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"590000","GROUP":"00" }],
+          "OFF": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"CO2","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"590000","GROUP":"00" }]
+        }
+      },
+	  "K016": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["AUTO","OFF"]
+        },
+        "EVENT": {
+		"AUTO": [
+		],
+          "OFF": [
+		]
+        }
+      },
+	  "K017": {
+        "STATUS": {
+          "stcnt": 3,
+          "stpt": 0,
+          "stmask": ["AUTO","ON","OFF"]
+        },
+        "EVENT": {
+          "AUTO": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"SPRAY","Action":"AUTO","STU":"01","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"420000","GROUP":"00" }
+		  ],
+          "ON": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"SPRAY","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"420000","GROUP":"00" }
+			],
+          "OFF": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"SPRAY","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"420000","GROUP":"00" }]
+        }
+      },
+	  "K018": {
+        "STATUS": {
+          "stcnt": 6,
+          "stpt": 0,
+          "stmask": ["AUTO","ON","OFF","PH70","PH40","EC70"]
+        },
+        "EVENT": {
+          "AUTO": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"ECDOSE","Action":"AUTO","STU":"01","GROUP":"00" },
+			{"CMD":"REGCMD/AUTOSETUP","POS":"PHDOSE","Action":"AUTO","STU":"01","GROUP":"00" }
+			],
+		  "ON": [
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"440000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"450000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"460000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"610000","GROUP":"00" }
+			],
+          "OFF": [
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"440000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"450000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"460000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"610000","GROUP":"00" }
+			],
+          "PH70": [
+			{"CMD":"PH","POS":"E002","Action":"ON","STU":"9302BC","GROUP":"00" }
+		  ],
+          "PH40": [
+			{"CMD":"PH","POS":"E002","Action":"ON","STU":"930190","GROUP":"00" }
+		  ],
+          "EC70": [
+			{"CMD":"ELECTRONS","POS":"E002","Action":"ON","STU":"940000","GROUP":"00" }
+		  ]
+        }
+      },
+	  "K019": {
+        "STATUS": {
+          "stcnt": 3,
+          "stpt": 0,
+          "stmask": ["AUTO","ON","OFF"]
+        },
+        "EVENT": {
+          "AUTO": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"OPWAVE","Action":"AUTO","STU":"01","GROUP":"00" },
+			{"CMD":"LED","POS":"G010","Action":"OFF","STU":"200000","GROUP":"00" }
+		  ],
+          "ON": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"OPWAVE","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"LED","POS":"G010","Action":"ON","STU":"200000","GROUP":"00" }
+			],
+          "OFF": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"OPWAVE","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"LED","POS":"G010","Action":"OFF","STU":"200000","GROUP":"00" }]
+        }
+      },
+	  "K020": {
+        "STATUS": {
+          "stcnt": 1,
+          "stpt": 0,
+          "stmask": ["AUTO"]
+        },
+        "EVENT": {
+          "AUTO": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"PHDOSE","Action":"AUTO","STU":"01","GROUP":"00" }
+			],
+          "ON": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"PHDOSE","Action":"AUTO","STU":"00","GROUP":"00" }
+		  ],
+          "OFF": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"PHDOSE","Action":"AUTO","STU":"00","GROUP":"00" }
+		  ]
+        }
+      },
+	  "K021": {
+        "STATUS": {
+          "stcnt": 4,
+          "stpt": 0,
+          "stmask": ["ON25","ON50","ON75","ON100","OFF100"]
+        },
+        "EVENT": {
+          "ON25": [
+			{"CMD":"LED","POS":"A002","Action":"ON","STU":"20003C","GROUP":"0A" },
+			{"CMD":"LED","POS":"A002","Action":"ON","STU":"20003C","GROUP":"0B" },
+			{"CMD":"LED","POS":"A002","Action":"ON","STU":"20003C","GROUP":"0C" },
+			{"CMD":"LED","POS":"A002","Action":"ON","STU":"20003C","GROUP":"0D" },
+			{"CMD":"LED","POS":"A001","Action":"SET","STU":"20003C","GROUP":"00" }
+		  ],
+          "ON50": [
+			{"CMD":"LED","POS":"A002","Action":"ON","STU":"200036","GROUP":"0A" },
+			{"CMD":"LED","POS":"A002","Action":"ON","STU":"200036","GROUP":"0B" },
+			{"CMD":"LED","POS":"A002","Action":"ON","STU":"200036","GROUP":"0C" },
+			{"CMD":"LED","POS":"A002","Action":"ON","STU":"200036","GROUP":"0D" },
+			{"CMD":"LED","POS":"A001","Action":"SET","STU":"200036","GROUP":"00" }
+		  ],
+          "ON75": [
+			{"CMD":"LED","POS":"A002","Action":"ON","STU":"20002C","GROUP":"0A" },
+			{"CMD":"LED","POS":"A002","Action":"ON","STU":"20002C","GROUP":"0B" },
+			{"CMD":"LED","POS":"A002","Action":"ON","STU":"20002C","GROUP":"0C" },
+			{"CMD":"LED","POS":"A002","Action":"ON","STU":"20002C","GROUP":"0D" },
+			{"CMD":"LED","POS":"A001","Action":"SET","STU":"20002C","GROUP":"00" }
+			],
+          "ON100": [
+			{"CMD":"LED","POS":"A002","Action":"ON","STU":"200000","GROUP":"0A" },
+			{"CMD":"LED","POS":"A002","Action":"ON","STU":"200000","GROUP":"0B" },
+			{"CMD":"LED","POS":"A002","Action":"ON","STU":"200000","GROUP":"0C" },
+			{"CMD":"LED","POS":"A002","Action":"ON","STU":"200000","GROUP":"0D" },
+			{"CMD":"LED","POS":"A001","Action":"SET","STU":"200000","GROUP":"00" }
+			],
+          "OFF100": [
+			{"CMD":"LED","POS":"A002","Action":"OFF","STU":"200000","GROUP":"0A" },
+			{"CMD":"LED","POS":"A002","Action":"OFF","STU":"200000","GROUP":"0B" },
+			{"CMD":"LED","POS":"A002","Action":"OFF","STU":"200000","GROUP":"0C" },
+			{"CMD":"LED","POS":"A002","Action":"OFF","STU":"200000","GROUP":"0D" }
+			]
+        }
+      },
+	  "K022": {
+        "STATUS": {
+          "stcnt": 4,
+          "stpt": 0,
+          "stmask": ["RFAN01","RFAN02","RFAN04","RFAN06"]
+        },
+        "EVENT": {
+          "RFAN01": [
+			{"CMD":"AIRFAN","POS":"B001","Action":"SET","STU":"000001","GROUP":"00" },
+			{"CMD":"AIRFAN","POS":"B002","Action":"SET","STU":"000000","GROUP":"00" },
+			{"CMD":"AIRFAN","POS":"B003","Action":"SET","STU":"000000","GROUP":"00" },
+			{"CMD":"AIRFAN","POS":"B004","Action":"SET","STU":"000000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"580000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"570000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"560000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"550000","GROUP":"00" }
+		  ],
+          "RFAN02": [
+			{"CMD":"AIRFAN","POS":"B001","Action":"SET","STU":"000001","GROUP":"00" },
+			{"CMD":"AIRFAN","POS":"B002","Action":"SET","STU":"000001","GROUP":"00" },
+			{"CMD":"AIRFAN","POS":"B003","Action":"SET","STU":"000000","GROUP":"00" },
+			{"CMD":"AIRFAN","POS":"B004","Action":"SET","STU":"000000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"580000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"570000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"560000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"550000","GROUP":"00" }
+		  ],
+          "RFAN04": [
+			{"CMD":"AIRFAN","POS":"B001","Action":"SET","STU":"000001","GROUP":"00" },
+			{"CMD":"AIRFAN","POS":"B002","Action":"SET","STU":"000001","GROUP":"00" },
+			{"CMD":"AIRFAN","POS":"B003","Action":"SET","STU":"000001","GROUP":"00" },
+			{"CMD":"AIRFAN","POS":"B004","Action":"SET","STU":"000000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"580000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"570000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"560000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"550000","GROUP":"00" }
+		  ],
+          "RFAN06": [
+			{"CMD":"AIRFAN","POS":"B001","Action":"SET","STU":"000001","GROUP":"00" },
+			{"CMD":"AIRFAN","POS":"B002","Action":"SET","STU":"000001","GROUP":"00" },
+			{"CMD":"AIRFAN","POS":"B003","Action":"SET","STU":"000001","GROUP":"00" },
+			{"CMD":"AIRFAN","POS":"B004","Action":"SET","STU":"000001","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"580000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"570000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"560000","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"550000","GROUP":"00" }
+		  ]
+        }
+      },
+	  "K023": {
+        "STATUS": {
+          "stcnt": 1,
+          "stpt": 0,
+          "stmask": ["OFF100"]
+        },
+        "EVENT": {
+          "OFF100": [
+			{"CMD":"LED","POS":"A002","Action":"OFF","STU":"200000","GROUP":"0A" },
+			{"CMD":"LED","POS":"A002","Action":"OFF","STU":"200000","GROUP":"0B" },
+			{"CMD":"LED","POS":"A002","Action":"OFF","STU":"200000","GROUP":"0C" },
+			{"CMD":"LED","POS":"A002","Action":"OFF","STU":"200000","GROUP":"0D" }
+			]
+        }
+      }
+	   
+    },
+
+    "KEYPAD1": {
+      "STATUS": {
+        "evncount": 8,
+        "ver": "ipc1",
+        "korglist": []
+      },
+      "K091": {
+        "STATUS": {"stcnt": 2,"stpt": 0,"stmask": [ "OFF","ON"]  },		 				
+		"EVENT": {
+				  "OFF": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K012"}
+				  ],
+				  "ON": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K012"}
+				  ]
+		}	
+      },
+      "K092": {
+        "STATUS": {"stcnt": 2,"stpt": 0,"stmask": [  "OFF",  "ON"]        },
+        "EVENT": {
+			"OFF": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K017"}
+			],
+			"ON": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K017"}
+			]
+        }
+      },
+      "K093": {
+        "STATUS": {"stcnt": 2,"stpt": 0,"stmask": [  "OFF",  "ON"]        },
+        "EVENT": {
+          "OFF": [  
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K004"}
+			],
+          "ON": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K004"}
+			]
+        }
+      },
+      "K094": {
+        "STATUS": {"stcnt": 2,"stpt": 0,"stmask": [  "OFF",  "ON"]        },
+        "EVENT": {
+          "OFF": [  
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K005"}
+			],
+          "ON": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K005"}
+			]
+        }
+      },
+      "K095": {
+        "STATUS": {"stcnt": 2,"stpt": 0,"stmask": [  "OFF",  "ON"]   },
+        "EVENT": {
+          "ON":  [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K001"}
+		  ],
+          "OFF": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K001"}
+		  ]
+        }
+      },
+      "K096": {
+        "STATUS": {"stcnt": 2,"stpt": 0,"stmask": ["OFF","ON"] },
+        "EVENT": {
+          "OFF": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K007"}
+			],
+          "ON": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K007"}
+			]
+        }
+      },
+      "K097": {
+        "STATUS": {"stcnt": 2,"stpt": 0,"stmask": [  "OFF",  "ON"] },
+        "EVENT": {
+          "OFF": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K006"}
+			],
+          "ON": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K006"}
+			]
+        }
+      },
+      "K098": {
+        "STATUS": {"stcnt": 2,"stpt": 0,"stmask": [  "OFF",  "ON"]
+        },
+        "EVENT": {
+          "OFF": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K003"}
+				],
+          "ON": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K003"}
+				]
+        }
+      },
+      "K099": {
+        "STATUS": {"stcnt": 2,"stpt": 0,"stmask": [  "OFF",  "ON"]
+        },
+        "EVENT": {
+          "OFF": [
+				{"CMD":"PUMP","POS":"G001","Action":"OFF","STU":"410000","GROUP":"10" },
+				{"CMD":"PUMP","POS":"J005","Action":"ON","STU":"2000000","GROUP":"0E" }
+			],
+          "ON": [
+				{"CMD":"PUMP","POS":"G001","Action":"OFF","STU":"410000","GROUP":"10" },
+				{"CMD":"PUMP","POS":"J005","Action":"ON","STU":"2000000","GROUP":"0E" }
+			]
+        }
+      }
+    },
+		
+    "KEYPAD2": {
+      "STATUS": {
+        "evncount": 8,
+        "ver": "v123",
+        "korglist": []
+      },
+	  
+      "K025": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A001",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A001",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K027": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A002",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A002",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K029": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A003",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A003",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K02B": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A004",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A004",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K02D": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A005",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A005",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K02F": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A006",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A006",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K031": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A007",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A007",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K033": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A008",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A008",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K035": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A009",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A009",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K037": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A00A",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A00A",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K039": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A00B",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A00B",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K03B": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A00C",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A00C",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K03D": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A00D",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A00D",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+	  
+      "K067": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A021",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A021",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K065": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A022",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A022",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K063": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A023",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A023",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K061": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A024",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A024",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K05F": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A025",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A025",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K05D": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A026",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A026",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K05B": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A027",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A027",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K059": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A028",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A028",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K057": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A029",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A029",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K055": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A02A",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A02A",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K053": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A02B",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A02B",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K051": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A02C",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A02C",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+      "K04F": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "00"
+        },
+        "EVENT": {
+          "OFF": [{  "CMD": "LED",  "POS": "A02D",  "Action": "OFF",  "STU": "200000",  "GROUP": "00"}],
+          "ON": [{  "CMD": "LED",  "POS": "A02D",  "Action": "ON",  "STU": "200000",  "GROUP": "00"}]
+        }
+      },
+	  
+      "K042": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "0"
+        },
+        "EVENT": {
+          "ON":  [
+			{"CMD":"PUMP","POS":"J005","Action":"ON","STU":"410000","GROUP":"0E" }
+			],
+          "OFF": [
+			{"CMD":"PUMP","POS":"J005","Action":"OFF","STU":"410000","GROUP":"0E" }
+			]
+        }
+      },
+      "K043": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "0"
+        },
+        "EVENT": {
+          "AUTO": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"UV","Action":"AUTO","STU":"01","GROUP":"10" },
+			{"CMD":"PUMP","POS":"G001","Action":"OFF","STU":"410000","GROUP":"10" }],
+          "ON": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"UV","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"G001","Action":"ON","STU":"410000","GROUP":"10" }],
+          "OFF": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"UV","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"G001","Action":"OFF","STU":"4100000","GROUP":"10" }]
+        }
+      },	  
+	  
+      "K044": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "0"
+        },
+        "EVENT": {
+          "AUTO": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"CYCLEFAN","Action":"AUTO","STU":"01","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"5B0000","GROUP":"00" }],
+          "ON": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K004"}
+			],
+          "OFF": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K004"}
+			]
+        }
+      },
+      "K045": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "0"
+        },
+        "EVENT": {
+          "ON": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"REFRESH","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"580000","GROUP":"00" }],
+          "OFF": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"REFRESH","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"580000","GROUP":"00" }]
+        }
+      },
+      "K046": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "0"
+        },
+        "EVENT": {
+          "ON": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"CYCLEFAN","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"5B0000","GROUP":"00" }],
+          "OFF": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"CYCLEFAN","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"5B0000","GROUP":"00" }]
+        }
+      },
+      "K047": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "0"
+        },
+        "EVENT": {
+          "ON": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"CYCLEFAN","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"ON","STU":"5B0000","GROUP":"00" }],
+          "OFF": [
+			{"CMD":"REGCMD/AUTOSETUP","POS":"CYCLEFAN","Action":"AUTO","STU":"00","GROUP":"00" },
+			{"CMD":"PUMP","POS":"E002","Action":"OFF","STU":"5B0000","GROUP":"00" }]
+        }
+      },
+	  
+      "K048": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "0"
+        },
+        "EVENT": {
+          "ON": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"AUTO","GROUP":"K017"}
+			],
+          "OFF": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K017"}
+			]
+        }
+      },
+      "K049": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "0"
+        },
+        "EVENT": {
+          "ON": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K017"}
+			],
+          "OFF": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K017"}
+			]
+        }
+      },
+      "K04A": {
+        "STATUS": {
+          "stcnt": 2,
+          "stpt": 0,
+          "stmask": ["OFF","ON"],
+          "GROUP": "0"
+        },
+        "EVENT": {
+          "ON": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"ON","GROUP":"K017"}
+			],
+          "OFF": [
+			{"CMD":"REGCMD/KEYSETUP","POS":"KEYPAD0","Action":"AUTO","STU":"OFF","GROUP":"K017"}
+			]
+        }
+      }
+	  
+    }
+	
+  },
+  "DEVLIB": {
+    "DEVMODE": {
+      "DLLIST": {
+        "01": {
+          "flag": 1,
+          "pos": "G001",
+          "reg": "71",
+          "loop": 0,
+          "max": 0,
+          "min": 0,
+          "eid": "01"
+        }
+      },
+      "DLCOUNT": 1,
+      "MODEORGLIST": []
+    },
+    "DEVEVENTLIST": {
+      "IDLIST": {
+        "01": [
+          "01234567890123456789",
+          "01234567890123456789"
+        ]
+      },
+      "IDCOUNT": 1,
+      "EVENTORGLIST": []
+    },
+    "DEVLOOP": [
+      {
+        "flag": 1,
+        "pos": "G001",
+        "reg": "71",
+        "loop": 0
+      },
+      {
+        "flag": 1,
+        "pos": "G001",
+        "reg": "71",
+        "loop": 0
+      },
+      {
+        "flag": 1,
+        "pos": "G001",
+        "reg": "71",
+        "loop": 0
+      }
+    ]
+  }
+
+  }

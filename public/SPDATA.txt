@@ -1,0 +1,24 @@
+{
+"VER":"V0.1",
+"index":2,
+"UUID":"000000000",
+"WEBLOADurl":"00000000"
+"PROCESS":{
+	"R001":{
+		"P0001":["LINK","POS","cmd","subcmd","stu",JDATA],
+		"P0002":["CCIF",JDATA,Value,">","P0004"],
+		"P0003":["WAIT",100],
+		"P0004":["CCGO","P0001"],
+		"P0001":["LWEB","url","UUID",JDATA],
+		"P0006":["CALL","R002"]
+		"P0007":["CCGO","P0001"],
+		"PPEND":["CEND"]
+	},
+	"R002":{
+		"P0001":["CSET",VAR1,VALUE]
+	},
+	"R003":{},
+	"REND":{}
+},
+"Pindex":["R001","R002","R003"]
+}

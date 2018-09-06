@@ -1,0 +1,142 @@
+ch1com
+	event.on('txbuff_event', function() { 
+	event.on('rxbuff_event', function() { 	//####
+	event.on('arxbuff_event', function() { 	//####
+	
+
+event.on('devallposchk_event', function() {  //### NO USER 
+
+event.on('senddevlist_event', function() { 
+event.on('devallscan_event', function() {
+event.on('devposload_event', function(spos) { //pos on
+
+	
+setInterval(function(){			
+	//console.log("0xfc command check 0..."+global.arxokflag)
+	if(global.arxokflag == true){
+		//console.log("0xfc command check 1..."+global.arxokflag)
+		event.emit('arxbuff_event'); 
+		global.arxokflag=false;
+	}
+},150);
+
+setInterval(function(){			
+	//console.log("0xfc command check 2..."+ch1com.rxokflag)
+	if(global.rxokflag == true){
+		//console.log("0xfc command check 3..."+global.rxokflag)
+		event.emit('rxbuff_event'); 
+		global.rxokflag=false;
+	}
+},160);
+	
+	
+
+event.on('rxbuff_event',
+	function devloadtobuff(sub02cmd){
+	event.emit('txbuff_event');
+	
+	
+function totxbuff(ttbuf){}
+	event.emit('txbuff_event');
+		
+event.on('devallposchk_event', function() {//### NO USER 	
+
+	
+function todevoutbuff(jdev)
+	event.on('senddevlist_event', function() { 
+
+app.get('/DeviceList', function (req, res) {	
+	event.on('devallscan_event', function() {		
+		function devalldatalink(){//###000,load		
+			function todevoutbuff(jdev)
+				event.on('senddevlist_event', function() { 
+		
+		
+app.get('/DeviceList', function (req, res) {	
+	event.on('devposload_event', function(spos) { //pos on	
+		function devposloaddata(spos){//pos , load
+			function todevoutbuff(jdev)
+				event.on('senddevlist_event', function() { 
+		
+		
+		
+function toalarmoutbuff(kdev){
+	event.on('sendalarm_event', function() { 
+
+function tokeypadoutbuff(kdev){
+	event.on('sendkeypad_event', function() { //FCC10681019E010281
+	
+//======================================================
+ch1com
+	global.rxokflag
+	global.arxokflag
+	ch1com.qqsendcmd(scmd,function(){})
+	ch1com.qrxcmd[]
+	ch1com.qrxcmdshift();
+	ch1com.aqrxcmd[]
+	ch1com.aqrxcmdshift();
+	
+
+function totxbuff(ttbuf){}
+	event.emit('txbuff_event');
+	
+check 
+	global.rxokflag
+	global.arxokflag		
+	
+	
+	if(global.rxokflag == true){
+		//console.log("0xfc command check 3..."+global.rxokflag)
+		event.emit('rxbuff_event'); 
+		global.rxokflag=false;
+	}
+	if(global.arxokflag == true){
+		//console.log("0xfc command check 1..."+global.arxokflag)
+		event.emit('arxbuff_event'); 
+		global.arxokflag=false;
+	}
+	
+	global.rxokflag	
+		event.on('rxbuff_event',
+			function devloadtobuff(sub02cmd){
+			event.emit('txbuff_event');
+	
+	
+	
+	global.arxokflag	
+		devalarmbuff(ss);//add to alarmbuff[]
+		if(sdevadd == "C1" && sdevcmd == "81"){
+			tokeypadoutbuff(alarmcmd);		
+		}else{
+			//alarmbuff.push(alarmcmd);  //to alarm buffer 
+		}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
